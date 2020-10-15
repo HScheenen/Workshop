@@ -8,3 +8,8 @@ jobs:
       - uses: actions/setup-node@v1
       - run: npm install -g bats
       - run: bats -v
+      - name: calculate-dates-and-times
+        uses: lee-dohm/calculate-dates-and-times@v1.0.2
+        with:
+          add: '1 day'
+          format: '[Tommorow at] HH:mm:ss'
